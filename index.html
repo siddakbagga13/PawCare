@@ -12,6 +12,7 @@
   <body>
     <div class="main-container">
       <div class="rectangle">
+        <div class="navbar">
         <div class="nav">
           <div class="logo-item">
             <div class="logo-nav"></div>
@@ -27,6 +28,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div class="image"></div>
       <div class="group">
@@ -196,7 +198,7 @@
                   </div>
                 </div>
               </div>
-              <div class="group-56">
+              <!-- <div class="group-56">
                 <span class="your-concern">Your Concern</span>
                 <div class="flex-row">
                   <div class="group-57"><span class="email">Name</span></div>
@@ -239,7 +241,67 @@
                 <div class="frame-69">
                   <span class="button-send-request">Send Request</span>
                 </div>
+              </div> -->
+              <form method="post" action="index.html">
+              <div class="group-56">
+                <span class="your-concern">Your Concern</span>
+                
+                <div class="flex-row">
+                  <div class="group-57">
+                    <input type="text" class="email" placeholder="Name">
+                  </div>
+                  <div class="email-58">
+                    <input type="email" class="container" placeholder="Email">
+                  </div>
+                </div>
+              
+                <div class="group-59">
+                  <div class="group-5a">
+                    <div class="group-5b">
+                      <div class="text-5c">
+                        <label>
+                          <input type="radio" name="concern" value="dog" class="ellipse-60">
+                          <span class="text-5d">Dog concern</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="concern" value="cat" class="ellipse-61">
+                          <span class="text-5e">Cat concern</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="concern" value="other" class="ellipse-62">
+                          <span class="other">Other</span>
+                        </label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              
+                <div class="group-64">
+                  <input type="tel" class="phone" placeholder="Phone">
+                </div>
+                
+                <div class="group-65">
+                  <input type="text" class="email-location" placeholder="Location">
+                </div>
+                
+                <div class="flex-row-cfd">
+                  <div class="group-66">
+                    <input type="text" class="email-city" placeholder="City">
+                  </div>
+                  <div class="group-67">
+                    <input type="text" class="email-pincode" placeholder="Pincode">
+                  </div>
+                </div>
+              
+                <div class="group-68">
+                  <textarea class="email-reason" placeholder="Reason"></textarea>
+                </div>
+              
+                <div class="frame-69">
+                  <button type="submit" class="button-send-request">Send Request</button>
+                </div>
               </div>
+            </form>
             </div>
             <div class="frame-6a">
               <span class="contact-us">Contact us</span>
@@ -294,16 +356,16 @@
                           <input type="tel" name="Phone_number" placeholder="Phone Number" required span class="email-7f"></span>
                         </div>
                         <div class="group-80">
-                          <span class="email-81">Email</span>
+                          <input type="text" name="Email" placeholder="Email" required span class="email-81"></span>
                         </div>
                       </div>
                       <div class="group-82">
-                        <span class="email-83">Message</span>
+                        <textarea class="email-83" placeholder="Message"></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="frame-84">
-                    <span class="button">Send Message</span>
+                    <button type="submit" span class="button">Send Message</span>
                   </div>
                 </div>
               </div>
@@ -353,5 +415,9 @@
         ><span class="link-column-item-9d"> </span>
       </div>
     </div>
+    <div class="resp"> <span> Paws!You only Adopt me from laptop🐶</span>
+      <!-- <img src="images/dog.png" alt="">
+    </div> --> 
+    <script src="script.js"></script>
   </body>
 </html>
