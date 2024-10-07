@@ -48,7 +48,7 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: relative;
+  position:fixed;
   width: 1429px;
   height: 70px;
   margin: 0 0 0 0;
@@ -1988,9 +1988,9 @@ button {
 }
 .vector-73 {
   position: relative;
-  width: 30.486px;
-  height: 37.037px;
-  margin: 1.481px 0 0 4.757px;
+  width: 38px;
+  height: 38px;
+  margin: 1.481px 0 0 2px;
   background: url(./images/fluent_location-28-filled.png)
     no-repeat center;
   background-size: 100% 100%;
@@ -2051,8 +2051,8 @@ button {
 }
 .vector-77 {
   position: relative;
-  width: 37.037px;
-  height: 29.63px;
+  width: 38px;
+  height:38px;
   margin: 5.185px 0 0 1.481px;
   background: url(./images/mdi_gmail.png)
     no-repeat center;
@@ -2736,11 +2736,27 @@ textarea {
       margin-top: 5em;
       color: #090a0b;
       font-family: Montserrat, var(--default-font-family);
-      font-size: 16px;
+      font-size: 30px;
       padding: 5px;
       background-image:url(./images/dog.png) no-repeat center;
-      background-size: cover; 
-    
+      background-size:contain; 
+    align-items: center;
+    font-weight: 600;
+  }
+  .dog{
+    width: 200px;
+    align-items: center;
+    height: 200px;
+
   }
       
   }
+  @media screen and (max-width:1440px) {
+    /* .resp{
+        display: none;
+    } */
+    .dog{
+      display: none;
+    }
+        
+    }
