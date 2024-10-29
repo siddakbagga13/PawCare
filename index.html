@@ -242,16 +242,16 @@
                   <span class="button-send-request">Send Request</span>
                 </div>
               </div> -->
-              <form method="post" action="index.html">
+              <form method="post" action="concern.php">
               <div class="group-56">
                 <span class="your-concern">Your Concern</span>
                 
                 <div class="flex-row">
                   <div class="group-57">
-                    <input type="text" class="email" placeholder="Name">
+                    <input type="text" name="name" class="email" placeholder="Name">
                   </div>
                   <div class="email-58">
-                    <input type="email" class="container" placeholder="Email">
+                    <input type="email" name="email" class="container" placeholder="Email">
                   </div>
                 </div>
               
@@ -277,24 +277,24 @@
                   </div>
               
                 <div class="group-64">
-                  <input type="tel" class="phone" placeholder="Phone">
+                  <input type="tel" name="phone" class="phone" placeholder="Phone">
                 </div>
                 
                 <div class="group-65">
-                  <input type="text" class="email-location" placeholder="Location">
+                  <input type="text" name="location" class="email-location" placeholder="Location">
                 </div>
                 
                 <div class="flex-row-cfd">
                   <div class="group-66">
-                    <input type="text" class="email-city" placeholder="City">
+                    <input type="text" name="city" class="email-city" placeholder="City">
                   </div>
                   <div class="group-67">
-                    <input type="text" class="email-pincode" placeholder="Pincode">
+                    <input type="text" name="pincode" class="email-pincode" placeholder="Pincode">
                   </div>
                 </div>
               
                 <div class="group-68">
-                  <textarea class="email-reason" placeholder="Reason"></textarea>
+                  <textarea class="email-reason" name="reason" placeholder="Reason"></textarea>
                 </div>
               
                 <div class="frame-69">
@@ -304,6 +304,7 @@
             </form>
             </div>
             <div class="frame-6a">
+              
               <span class="contact-us">Contact us</span>
               <div class="frame-6b">
                 <div class="group-6c">
@@ -341,32 +342,34 @@
                 </div>
                 <div class="group-78">
                   <div class="group-79">
+                    <form method="post" action="contact.php">
                     <span class="message-us">Message us</span>
                     <div class="group-7a">
                       <div class="flex-row-7b">
                         <div class="group-7c">
-                          <input type="text" name="first_name" span class="email-first-name" placeholder="First Name" required></span>
+                          <input type="text" name="firstName" span class="email-first-name" placeholder="First Name" required></span>
                         </div>
                         <div class="group-7d">
-                           <input type="text" name="last_name" placeholder="Last Name" required span class="email-last-name"></span>
+                           <input type="text" name="lastName" placeholder="Last Name" required span class="email-last-name"></span>
                         </div>
                       </div>
                       <div class="flex-row-ac">
                         <div class="group-7e">
-                          <input type="tel" name="Phone_number" placeholder="Phone Number" required span class="email-7f"></span>
+                          <input type="tel" name="phoneNumber" placeholder="Phone Number" required span class="email-7f"></span>
                         </div>
                         <div class="group-80">
-                          <input type="text" name="Email" placeholder="Email" required span class="email-81"></span>
+                          <input type="text" name="email" placeholder="Email" required span class="email-81"></span>
                         </div>
                       </div>
                       <div class="group-82">
-                        <textarea class="email-83" placeholder="Message"></textarea>
+                        <textarea class="email-83" name="message" placeholder="Message"></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="frame-84">
                     <button type="submit" span class="button">Send Message</span>
                   </div>
+                </form>
                 </div>
               </div>
             </div>
@@ -417,7 +420,7 @@
     </div>
     <center>
      <div class="resp"> <span> Paws! You only Adopt me from laptop🐶</span> 
-     <img src="images/dog.png" class="dog" alt="">
+     <!-- <img src="images/dog.png" class="dog" alt=""> -->
     </div></center>
     <script src="script.js"></script>
   </body>

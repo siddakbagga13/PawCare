@@ -2743,12 +2743,6 @@ textarea {
     align-items: center;
     font-weight: 600;
   }
-  .dog{
-    width: 200px;
-    align-items: center;
-    height: 200px;
-
-  }
       
   }
   @media screen and (max-width:1440px) {
