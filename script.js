@@ -1,40 +1,40 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.nav').addClass("sticky");
-        }else{
-            $('.nav').removeClass("sticky");
-        }
-        
-        // scroll-up button show/hide script
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
-        // owl carousel script
-        $('.carousel').owlCarousel({
-            margin: 20,
-            loop: true,
-            autoplay: true,
-            autoplayTimeOut: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0:{
-                    items: 1,
-                    nav: false
-                },
-                600:{
-                    items: 2,
-                    nav: false
-                },
-                1000:{
-                    items: 3,
-                    nav: false
-                }
-            }
-        });
-    });
-    
+// Get modal elements
+const loginModal = document.getElementById('loginModal');
+const registerModal = document.getElementById('registerModal');
+const closeButtons = document.querySelectorAll('.close');
+
+// Open Login Modal
+function openLoginModal() {
+  loginModal.style.display = 'block';
+}
+
+// Open Register Modal
+function openRegisterModal() {
+  registerModal.style.display = 'block';
+}
+
+// Close modals
+closeButtons.forEach(button => {
+  button.onclick = function () {
+    loginModal.style.display = 'none';
+    registerModal.style.display = 'none';
+  };
+});
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  if (event.target == loginModal || event.target == registerModal) {
+    loginModal.style.display = 'none';
+    registerModal.style.display = 'none';
+  }
+};
+
+// Password validation for registration
+document.getElementById('registerForm').addEventListener('submit', function (event) {
+  const password = document.getElementById('registerPassword').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    event.preventDefault();
+  }
+});

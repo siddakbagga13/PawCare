@@ -1,0 +1,16 @@
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Create a PawCare Account</h2>
+      <form id="registerForm" action="register.php" method="post">
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" placeholder="Last Name" required>
+        <input type="email" name="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit" class="button">Register</button>
+      </form>
+      <p>Already have an account? <span onclick="openLoginModal()">Login here</span></p>
+    </div>
+  </div>
+  

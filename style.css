@@ -2726,10 +2726,14 @@ textarea {
   white-space: nowrap;
   z-index: 21;
 }
+
 @media screen and (max-width:440px) {
   div{
    display: none;
       
+  }
+  body{
+    display: none;
   }
   .resp{
       display: inline;
