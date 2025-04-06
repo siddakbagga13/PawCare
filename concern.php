@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute query and check if successful
     if ($conn->query($sql) === TRUE) {
-        echo "New concern recorded successfully.";
+        header("Location: index.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

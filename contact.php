@@ -9,11 +9,11 @@ $email = $_POST["email"];
 $message = $_POST["message"];
 
 // Prepare and execute SQL statement
-$sql = "INSERT INTO your_table_name (firstName, lastName, phoneNumber, email, message)
+$sql = "INSERT INTO contact_form (firstName, lastName, phoneNumber, email, message)
 VALUES ('$firstName', '$lastName', '$phoneNumber', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  header("Location: home.html");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
